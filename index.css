@@ -563,6 +563,13 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.about__photo {
+    border-radius: 50%; /* Mengubah sudut foto menjadi oval */
+    width: 100%; /* Pastikan foto mengisi container dengan lebar 100% */
+    height: auto; /* Menjaga aspek ratio foto */
+    display: block; /* Menjaga batas-batas oval */
+}
+
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
