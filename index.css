@@ -443,6 +443,9 @@ body:not(.user-is-tabbing) a:focus {
 .work__box {
     display: flex;
     align-items: center;
+
+    position: relative; /* Memastikan posisi relatif untuk animasi */
+    transition: transform 2s ease-out; /* Transisi untuk efek gelembung */
 }
 
 @media(max-width: 900px) {
@@ -486,6 +489,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__code:hover {
     transform: scale(1.2);
+
+    transform: scale(1.05); /* Scaled ketika di-hover */
 }
 
 .work__image-box {
@@ -505,6 +510,33 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+@keyframes bubble {
+    0% {
+        transform: scale(1); /* Ukuran awal */
+    }
+    50% {
+        transform: scale(1.1); /* Ukuran tengah gelembung */
+    }
+    100% {
+        transform: scale(1); /* Kembali ke ukuran awal */
+    }
+}
+
+/* Aturan untuk menerapkan animasi saat discroll */
+@keyframes scrollBubble {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.work__box.animate {
+    animation: scrollBubble 0.5s ease-out both;
+}
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
