@@ -493,6 +493,12 @@ body:not(.user-is-tabbing) a:focus {
     transform: scale(1.05); /* Scaled ketika di-hover */
 }
 
+.work__image {
+    width: 100%; /* Atur lebar gambar agar sesuai dengan container */
+    height: auto; /* Menjaga aspek ratio gambar */
+}
+
+
 .work__image-box {
     margin-bottom: var(--gutter-normal);
 }
