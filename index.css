@@ -494,7 +494,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image {
-    width: 100%; /* Atur lebar gambar agar sesuai dengan container */
+    width: 90%; /* Atur lebar gambar agar sesuai dengan container */
     height: auto; /* Menjaga aspek ratio gambar */
 }
 
@@ -602,7 +602,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .about__photo {
-    border-radius: 50%; /* Mengubah sudut foto menjadi oval */
+    border-radius:50%; /* Mengubah sudut foto menjadi oval */
     width: 100%; /* Pastikan foto mengisi container dengan lebar 100% */
     height: auto; /* Menjaga aspek ratio foto */
     display: block; /* Menjaga batas-batas oval */
