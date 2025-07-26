@@ -209,6 +209,8 @@ p {
     background: url('./images/header1.jpg') center/cover;
     opacity: 0.2;
     z-index: 1;
+    border: none;
+    outline: none;
 }
 
 .hero__content {
