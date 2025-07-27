@@ -99,7 +99,7 @@ h2 {
     position: relative;
 }
 
-h2::after {
+h2{
     content: '';
     position: absolute;
     bottom: -10px;
@@ -172,7 +172,7 @@ p {
     position: relative;
 }
 
-.nav__link::after {
+.nav__link {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -183,7 +183,7 @@ p {
     transition: var(--transition-fast);
 }
 
-.nav__link:hover::after {
+.nav__link:hover {
     width: 100%;
 }
 
